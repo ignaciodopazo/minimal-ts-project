@@ -1,0 +1,18 @@
+{
+  "name": "minimal-ts-project",
+  "version": "1.0.0",
+  "author": "Ignacio Dopazo",
+  "description": "Minimal Typescript project with ready configuration to be published as an npm package.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "start": "ts-node ./src/index.ts",
+    "build": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.8.3",
+    "@types/node": "^18.7.6",
+    "ts-node": "^10.9.1"
+  }
+}
