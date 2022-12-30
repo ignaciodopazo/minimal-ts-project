@@ -6,10 +6,17 @@
   "license": "MIT",
   "main": "dist/src/index.js",
   "types": "dist/src/index.d.ts",
+  "files": [
+    "dist/src",
+    "LICENSE",
+    "README.md",
+    "package.json"
+  ],
   "scripts": {
     "start": "ts-node ./src/index.ts",
     "build": "tsc",
-    "test": "jest --passWithNoTests --detectOpenHandles --coverage"
+    "test": "jest --passWithNoTests --detectOpenHandles --coverage",
+    "prepublish": "rm -rf dist && npm run build"
   },
   "devDependencies": {
     "@types/jest": "^29.2.4",
