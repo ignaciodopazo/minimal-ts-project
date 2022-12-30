@@ -8,6 +8,9 @@
     "outDir": "dist",
     "strict": true,
     "esModuleInterop": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "resolveJsonModule": true
   },
   "exclude": [
     "node_modules",
